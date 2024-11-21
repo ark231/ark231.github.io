@@ -1,0 +1,12 @@
+---
+layout: default
+title: Home
+---
+
+<ul>
+    {% for doc in site.data.navigation%}
+    <li><a href="{{ doc.link }}">{{ doc.name}}</a></li>
+    {% endfor %}
+</ul>
+
+{{content}}
