@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 {% include breadcrumbs.html omit_date=true%}
 
 <h1>{{ page.title }}</h1>
 <p>{{ page.date | date:"%Y年%m月%d日"}}</p>
 
 {{ content }}
+
+{% include footnote-preview.html %}
